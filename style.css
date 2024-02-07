@@ -1,0 +1,141 @@
+/* --- CSS RESET --- */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* --- CSS RESET END --- */
+
+html {
+  background-color: #f8f7f3;
+  color: #1a24fb;
+
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Overpass', sans-serif;
+}
+
+.header {
+
+  width: 100%;
+  height: 40px;
+
+  background-color: #1a24fb;
+  color: #f8f7f3;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+
+  letter-spacing: 0.2em;
+
+  padding: 10px;
+
+  margin-bottom: 5rem;
+}
+
+
+.bookContainer {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  max-width: 1280px;
+  margin: 0 auto;
+  gap: 20px;
+  
+}
+
+
+
+.cardAndButton {
+ 
+  max-width: 350px;
+  width: 100%;
+  
+}
+
+.bookCard {
+  position: relative;
+  border: solid 1px #1a24fb;
+  padding: 40px;
+
+  height: 450px;
+}
+
+.bookNumber {
+  position: absolute;
+  top: 10px;
+  right: 0;
+
+  font-size: 24px;
+  
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  justify-content: center;
+}
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+
+  font-size: 36px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.cardAndButton p {
+  font-size: 16px;
+  font-weight: 500;
+}
+.name{
+  font-size: 12px;
+  letter-spacing: 0.2em;
+}
+
+
+
+
+
+.cardAndButton button {
+  margin-top: 0.5rem;
+  text-align: left;
+
+  background-color: #f8f7f3;
+
+  width: 100%;
+  height: 18px;
+  font-size: 14px;
+  
+  border: none;
+  cursor: pointer;
+}
+
+.cardAndButton button:hover {
+  background-color: #1a24fb;
+  color: #f8f7f3;
+  border: 1px solid #1a24fb;
+}
+
+@media (max-width: 600px) {
+  .bookContainer {
+    padding: 20px;
+    flex-direction: column;
+    gap: 50px;
+    
+  }
+
+  .cardAndButton {
+    
+
+    max-width: none;
+    height: fit-content;
+  }
+
+  .bookCard {
+    
+    max-width: fit-content;
+    height: fit-content;
+  }
+}
