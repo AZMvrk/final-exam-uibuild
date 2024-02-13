@@ -63,7 +63,7 @@ const bookComponent = (book, index) => `
     <h2 class="title">${book.title}</h2>
     <p>${book.text}</p>
   </div>
-  <button>read more</button>
+  <button class="readMore">read more</button>
 </div>
 `
 const headerComponent = (text) => `
